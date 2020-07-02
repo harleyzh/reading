@@ -2,7 +2,7 @@
 
 ### Goal 🥅 
 
-Short, sweet and accurate summaries and takeaways of books.  
+Short, sweet and accurate summaries and takeaways from books.  
 
 
 
