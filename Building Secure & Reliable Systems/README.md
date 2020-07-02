@@ -92,7 +92,7 @@ Fun. Fame. Activism. Financial gain. Coercion. Manipulation. Espionage. Destruct
 
   - Threat modeling insider risk
 
-    ![image-20200702132106865](Building Secure & Reliable Systems/images/2-2.png)
+    ![image-2-2](https://github.com/Harleyzheng/reading/blob/master/Building%20Secure%20%26%20Reliable%20Systems/images/2-2.png)
 
   - Designing for insider risk
 
