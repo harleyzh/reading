@@ -88,7 +88,7 @@ Fun. Fame. Activism. Financial gain. Coercion. Manipulation. Espionage. Destruct
 
   - First-party insiders. Third-party insiders. Related insiders.
 
-    ![image-20200702132031417](Building Secure & Reliable Systems/images/2-2.png)
+    ![image-2-1](https://github.com/Harleyzheng/reading/blob/master/Building%20Secure%20%26%20Reliable%20Systems/images/2-1.png)
 
   - Threat modeling insider risk
 
