@@ -46,7 +46,9 @@ These properties are both a reliability and a security concern, just through dif
 - **Recovery**
   - Recovering from a security failure often requires patching systems to fix a vulnerability. It is a double-edged sword: while this capability can help close vulnerabilities quickly, it can also introduce bugs or performance issues that cause a lot of damage.
 
-#### 
+## Summary 
+
+Chapter 1 gives a high level introduction to security and reliability. It begins with problem statement, then definitions, commonlities and differences of the two. Then design principles from many different angles are discussed at a high level, as well as trade offs between the two concepts.  
 
 ## Chapter 2. Understanding Adversaries
 
@@ -126,6 +128,12 @@ Understanding potential adversaries can be complex and nuanced.
 - Don’t underestimate your adversary.
 - Attribution is hard.
 - Attackers aren’t always afraid of being caught.
+
+## Summary 
+
+Chapter 2 narrows down to security adversaries. It begins with defining different attacker motivations and then categorizes attacker profiles into different subsets. It then discusses prevention techniques, methods to understand attacks and of course, trade offs. 
+
+
 
 
 
