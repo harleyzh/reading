@@ -8,9 +8,9 @@ Short, sweet and accurate summaries and takeaways from books.
 
 ### Current Books:
 
-Building Secure & Reliable Systems (Best Practices for Designing, Implementing and Maintaining Systems)                        -- Google (SRE Book)
+- Building Secure & Reliable Systems (Best Practices for Designing, Implementing and Maintaining Systems) --- Google (SRE Book)
 
-The Ride of a Lifetime: Lessons Learned from 15 Years as CEO of the Walt Disney Company
+- The Ride of a Lifetime: Lessons Learned from 15 Years as CEO of the Walt Disney Company
 
 
 
