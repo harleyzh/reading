@@ -4,21 +4,21 @@
 
 Reliability and security are both crucial components of a truly trustworthy system. Building systems that are both reliable and secure is difficult. While the requirements for reliability and security share many common properties, they also require different design considerations. 
 
-#### Design Difference. 
+## Design Difference. 
 
 When designing for reliability, you assume that some things will go wrong at some point. When designing for security, you must assume that an adversary could be trying to make things go wrong at any point. In the absence of an adversary, systems often fail safe (or open). But to avoid security vulnerabilities, we could design the door to fail secure and remain closed when not powered.
 
-#### Trade Offs
+## Trade Offs
 
 - Redundancy. While redundancy increases reliability, it also increases the attack surface. An adversary need only find a vulnerability in one path to be successful.
 
 - Incident Investigation/Mitigation. Handle security incidents the smallest number of people who can fix the problem effectively, so the security adversary isn’t tipped off to the recovery effort. Voluminous system logs may inform the response to an incident and reduce your time to recovery, but may also be a valuable target for an attacker.
 
-#### Confidentiality, Integrity, Availability (CIA) 
+## Confidentiality, Integrity, Availability (CIA) 
 
 These properties are both a reliability and a security concern, just through difference lens. For example, having a push-to-talk microphone stuck in the transmit position is a notable confidentiality problem. A malicious attack may be indistinguishable from a design flaw or a legitimate spike in traffic. 
 
-#### Commonalities
+## Commonalities
 
 - **Invisibility**. Reliability and security are mostly invisible when everything is going well. Good communication—not only in times of trouble, but also when things are going well—is a solid foundation for this trust. The costs of reliability and security failures can be severe
 - **Assessment**. Use riskbased approaches to estimate the costs of negative events, as well as the up-front and opportunity costs of preventing these events. Measure the probability of negative events differently for reliability and security. You can reason about the reliability of a composition of systems and plan engineering work accord‐ ing to desired error budgets. Adversarial testing—simulated attacks typically performed from the perspective of a defined adversary—can also be used to evaluate a system’s resistance to particular kinds of attacks, the effectiveness of attack detection mechanisms, and the potential consequences of attacks. [Chaos Engineering]
@@ -48,9 +48,86 @@ These properties are both a reliability and a security concern, just through dif
 
 #### 
 
+## Chapter 2. Understanding Adversaries
+
+In the reliability context, adversaries usually operate with benign intent and take abstract form. By contrast, adversaries in the security context are human; their actions are calcula‐ ted to affect the target system in an undesirable way. In this chapter, we deep dive on security adversaries to help specialists in diverse fields develop an adversarial mindset.
+
+## Attacker Motivations 
+
+Fun. Fame. Activism. Financial gain. Coercion. Manipulation. Espionage. Destruction.
+
+## Attacker Profiles
+
+- **Hobbyists**. 
+
+  - Hobbyists abide by personal ethics about not harming systems and don’t cross boundaries into criminal behavior
+
+- **Vulnerability Researchers.** 
+
+  - Red Teams and penetration testers to make systems better
+
+- **Governments and Law Enforcement.**
+
+  - We recommend that organizations take the long view with regard to building security defenses by investing early in protecting their most sensitive assets, and by having a continued rigorous program that can apply new layers of protections over time. 
+
+- **Activists**. 
+
+  - If your website draw the attention of activists, or allow users to host own content, consider very robust, layered security controls that ensure your sys‐ tems are patched against vulnerabilities and resilient to DoS attacks, and that your backups can restore a system and its data quickly
+
+- **Criminal Actors** 
+
+  - These actors tend to gravitate toward the easiest way to meet their goals with the least up-front cost and effort. Use CAPTCHA to increase the cost of attacks over time. 
+
+- **Automation and Artificial Intelligence.** 
+
+  - Developers need to consider resilient system design by default, and be able to automatically iterate the security posture of their systems.
+
+- **Insiders**
+
+  - First-party insiders. Third-party insiders. Related insiders.
+
+    ![image-20200702132031417](/Users/hzheng/Library/Application Support/typora-user-images/image-20200702132031417.png)
+
+  - Threat modeling insider risk
+
+    ![image-20200702132106865](/Users/hzheng/Library/Application Support/typora-user-images/image-20200702132106865.png)
+
+  - Designing for insider risk
+
+    - Least privilege. Granting the fewest privileges necessary to perform job duties, both in terms of scope and duration of access. See Chapter 5. 
+    - Zero trust. Designing automated or proxy mechanisms for managing systems so that insid‐ ers don’t have broad access that allows them to cause harm. See Chapter 3. 
+    - Multi-party authorization. Using technical controls to require more than one person to authorize sensitive actions. See Chapter 5. 
+    - Business justifications. Requiring employees to formally document their reason for accessing sensitive data or systems. See Chapter 5.
+    - Auditing and detection. Reviewing all access logs and justifications to make sure they’re appropriate. See Chapter 15. 
+    - Recoverability. The ability to recover systems after a destructive action, like a disgruntled employee deleting critical files or systems. See Chapter 9.
+
+## Attacker Methods
+
+We discuss a few frameworks for studying attacker methods: threat intelligence, cyber kill chains, and TTPs.
+
+#### Threat Intelligence
+
+Written reports. Indicators of compromise. Malware reports
+
+#### Cyber Kill Chains™
+
+One way of preparing for attacks is to lay out all the possible steps that an attacker may have to take to achieve their goals. 
+
+#### Tactics, Techniques, and Procedures
+
+In short, the framework expands each stage of the cyber kill chain into detailed steps and provides formal descriptions of how an attacker could carry out each stage of an attack. 
+
+## Risk Assessment Considerations
+
+Understanding potential adversaries can be complex and nuanced.
+
+- You may not realize you’re a target.
+- Attack sophistication is not a true predictor of success.
+- Don’t underestimate your adversary.
+- Attribution is hard.
+- Attackers aren’t always afraid of being caught.
 
 
 
 
-#### 
 
