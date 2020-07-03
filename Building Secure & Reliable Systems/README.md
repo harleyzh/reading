@@ -1,6 +1,6 @@
 # Building Secure & Reliable Systems
 
-## Chapter 1
+# Chapter 1
 
 Reliability and security are both crucial components of a truly trustworthy system. Building systems that are both reliable and secure is difficult. While the requirements for reliability and security share many common properties, they also require different design considerations. 
 
@@ -50,7 +50,7 @@ These properties are both a reliability and a security concern, just through dif
 
 Chapter 1 gives a high level introduction to security and reliability. It begins with problem statement, then definitions, commonlities and differences of the two. Then design principles from many different angles are discussed at a high level, as well as trade offs between the two concepts.  
 
-## Chapter 2. Understanding Adversaries
+# Chapter 2. Understanding Adversaries
 
 In the reliability context, adversaries usually operate with benign intent and take abstract form. By contrast, adversaries in the security context are human; their actions are calcula‐ ted to affect the target system in an undesirable way. In this chapter, we deep dive on security adversaries to help specialists in diverse fields develop an adversarial mindset.
 
@@ -133,9 +133,44 @@ Understanding potential adversaries can be complex and nuanced.
 
 Chapter 2 narrows down to security adversaries. It begins with defining different attacker motivations and then categorizes attacker profiles into different subsets. It then discusses prevention techniques, methods to understand attacks and of course, trade offs. 
 
+# Chapter 3 Safe Proxies
 
+## Safe Proxy
 
+Proxies provide a way to address new reliability and security requirements without requiring substantial changes to deployed systems
 
+- Audit every operation in the fleet
+- Control access to resources
+- Protect production from human mistakes at scale
 
+Zero Touch Prod is a project at Google that requires every change in production to be made by automation (instead of humans), prevalidated by software, or triggered through an audited breakglass mechanism.
 
+#### Safe proxy model
 
+At Google, we enforce this behavior by restricting the target system to accept only calls from the proxy through a configuration. This configuration specifies which application-layer remote procedure calls (RPCs) can be executed by which client roles through access control lists (ACLs). After checking the access permissions, the proxy sends the request to be executed via the RPC to the target systems. Typically, each target system has an application-layer program that receives the request and executes it directly on the system. The proxy logs all requests and commands issued by the systems it interacts with.
+
+![image-3-2](https://github.com/Harleyzheng/reading/blob/master/Building%20Secure%20%26%20Reliable%20Systems/images/3-2.png)
+
+#### Benefits
+
+- A central point to enforce multi-party authorization (MPA), where we make the access decisions for requests that interact with sensitive data
+- Administrative usage auditing, where we can track when a given request was performed and by whom.
+- Rate limiting, where changes like a system restart take effect gradually, and we can potentially restrict the blast radius of a mistake 
+- Compatibility with closed-source third-party target systems, where we control the behavior of components (that we cannot modify) through additional functionality in the proxy
+- Continuous improvement integration, where we add security and reliability enhancements to the central proxy point.
+
+#### Pitfalls
+
+- Increased cost, in terms of maintenance and operational overhead. 
+- A single point of failure, if either the system itself or one of its dependencies is unavailable. We mitigate this situation by running multiple instances to increase redundancy. 
+- A policy configuration for access control, which can be a source of errors itself.
+- A central machine that an adversary could take control of. 
+
+#### Chain of events 
+
+- The proxy logs all RPCs and checks performed, providing an easy way to audit previously run administrative actions. 
+- The proxy checks the policy to ensure the caller is in group:admin. 
+- Since this is a sensitive command, MPA is triggered and the proxy waits for an authorization from a person in group:admin-leads. 
+- If granted approval, the proxy executes the command, waits for the result, and attaches the return code, stdout, and stderr to the RPC response.
+
+![image-3-1](https://github.com/Harleyzheng/reading/blob/master/Building%20Secure%20%26%20Reliable%20Systems/images/3-1.png)
