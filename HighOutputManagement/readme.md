@@ -41,3 +41,27 @@ When employee is immature, it's essential to have a hands on manager to train. W
 Intense passion toward training and teaching, only ways to impact an employee's output.
 
 Follow the human nature: Be Optimist in order to build anything great.
+
+
+
+### The basics of production
+
+The basic requirements of production. To build and delivery products in response to the demands of the customer at a scheduled delivery time, at an acceptable quality level, and at the lowest possible cost. 
+
+Basic Definition. 
+
+- Process: an activity that changes material.
+- Assembly: 
+- Test(functional test, system test)
+
+With a bit more complication. Consider the breakfast company which serves eggs, toasts and coffee.
+
+- Rework 
+- Manpower (egg-cooker, toast-maker, coffee-pourer instead of just one waiter)
+- Capital equipment (add another toaster)
+- Inventory (of hot toast ready to serve)
+- Conitnuous operation (an automated boiling machine)
+- monitoring eggs, temp, 
+
+**Materials become more valuable as it moves through the process.** So we should always try to detect and fix any problem in a production process at the lowest-value stage possible. A prisoner on average cost about $1M from arrested to trial to end up in prison (including cost of other prisoners who don't move forward). But building a prison cell costs only $80K and maintaining a prisoner $20K. We should detect the problem early (non-availability of a cell) before the criminals went through the whole system. 
+
