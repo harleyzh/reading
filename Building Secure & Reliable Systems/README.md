@@ -174,3 +174,9 @@ At Google, we enforce this behavior by restricting the target system to accept o
 - If granted approval, the proxy executes the command, waits for the result, and attaches the return code, stdout, and stderr to the RPC response.
 
 ![image-3-1](https://github.com/Harleyzheng/reading/blob/master/Building%20Secure%20%26%20Reliable%20Systems/images/3-1.png)
+
+# Chapter 4
+
+**Initial Velocity Versus Sustained Velocity**
+
+Projects not account for critical requirements like security, reliability, and main‐ tainability early in the project cycle may indeed increase your project’s velocity early in the project’s lifetime. However, experience shows that doing so also usually slows you down significantly later.1

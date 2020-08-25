@@ -65,3 +65,93 @@ With a bit more complication. Consider the breakfast company which serves eggs, 
 
 **Materials become more valuable as it moves through the process.** So we should always try to detect and fix any problem in a production process at the lowest-value stage possible. A prisoner on average cost about $1M from arrested to trial to end up in prison (including cost of other prisoners who don't move forward). But building a prison cell costs only $80K and maintaining a prisoner $20K. We should detect the problem early (non-availability of a cell) before the criminals went through the whole system. 
 
+### Factory
+
+5 essential indicators to run a team. meet production goals on a daily basis. 
+
+Sales forecast for the day. Including a delta of sales by daily.
+
+Raw material inventory. (Monitor both inventory levels and incidence of shortages)
+
+Condition of your equipment
+
+Manpower
+
+Quality
+
+**Always measure physical, countable output of work unit.** To compare output of a group across organizations.
+
+**Stagger chart** to show forecasted incoming orders month by month. 
+
+**Build to forecast.** A contemplation of future orders. Taking an inventory risk. But reducing time to delivery a product. Ask both the manufacturin and the sales departments to prepare a forecast so that people are responsible for performing against their own predictions.
+
+![image-20200822102908055](/Users/hzheng/Library/Application Support/typora-user-images/image-20200822102908055.png)
+
+We should deliberately build a reasonable amount of 'slack' into the system because the two flows rarely match due to unforeseen problems. Inventory is the most obvious place for it. But inventory should be kept at the lowest-value stage.
+
+For getting acceptable quality at the lowest cost, we should reject materials at the early stage (before investing future values). When a material is rejected, there is a decision of accepting or rejecting it to be made. Still accepting the defect material might result in less valuable product and less cost, **but if we cannot access the consequence of a project, we can't make compromises when it comes to reliability.**  
+
+There are two types of inspections. A gate-like inspection to check each material and block the flow and decides whether it's a pass. A monitoring step to take a sample of the material and check the rates of failure (adding throughput to the flow). There are subtle trade-offs between the two. **Variable inspections: adjust the frequency of inspection based on the trend of quality levels .** 
+
+**Variable inspection** of a manager to employees benefits the manager so that they have more free time and it benefits employees so that they develop their responsibility.
+
+#### Productivity
+
+In a black box analogy, output divided by the labor required to generate the output.
+
+How to improve productivity? We can change the nature of the work performed: what we do, not how fast we do it. We want to increase the **ratio of output to activity.** **Work smarter, not harder**
+
+**Concept of leverage.** An activity with high leverage will generate a high level of output. An activity with low leverage, a low level of output. To improve the leverage: 
+
+- Automation. 
+- Work simplification. Audit every single step in a flow chart and try to reduce the number of steps. You must critically question why each step is performed and throw out those that common sense says you can do without. Many steps exist for no good reason. 
+
+### Managerial Leverage
+
+A manager's **output** should not be equal to manager's activities, rather it should be measurable, complete, high-quality, fully processed products/designs/etc.
+
+**A manager's output = The output of their organization. + The output of the neighboring orgs under his influence.**
+
+How are written reports important? The process of writing the report is important, the report itself is not. Similarly, the preparation of an annual plan is in itself the end, not the resulting bound volume. It's the mental eercise that is valuable
+
+Information-gathering is the basis of all other managerial work.
+
+Nudging. **Advocating a preferred course of action**. It's stronger than merely conveying information. But should be carefully distinguished from decision-making that results in firm, clear directives. 
+
+Being a role-model. How you handle your own time is the singlee most important aspect of being a role model. Values and behavioral norms are conveyed very effectively by doing and doing visibly. 
+
+**Leverage of managerial activity**
+
+Output = leverage1 * activity1 + leverage2 * activity2
+
+Examples of high leverage activities: orientation speech, performance review, engineering designing process/software affecting large group of workers/customers. 
+
+Examples of negative high leverage activities: depressed (soon depression will spread),  waffling (indecisive is as bad as a negative decision), meddling (micromanagement. team will begin to take a much more restricted view of what's expected, showing less initiatives and responsibilities). Bad engineered process/software. - We should pay close attention to customer complaints.
+
+**Delegation as leverage**
+
+Should you delegate activities that are familiar to you or those that aren't? For efficiency, it's okay to hold on to familiar tasks, as long as this is a conscious decision.  
+
+**Delegation without follow-thru is abdiction. After delegation, you are still responsible for its accomplishment, and monitoring the delegated tasks is the only practical way.** 
+
+[echoing previous chapter] Review rough drafts of reports that you have delegated; don't wait until your delegatee have spent time publishing them into final form.  
+
+Depends on delegatee's **task-relavant maturity**, adjust the frequency of monitoring. 
+
+For effectiveness, we should go into delegatee's presented details randomly. Asking delegatees' specific questions and if they answer convincingly, we will approve what they want. 
+
+**Speed up managerial activities**
+
+important to say no earlier than later. [production concepts]
+
+Maintain an inventory of discretionary tasks that benefit their group over the long term, without this inventory, the manager will meddle in his employees work.
+
+Be more consistent and use a method that has worked before.
+
+**Team size**
+
+6-8. too low: meddling others work. too high: less than half a day per employee, no time for monitoring.
+
+**Managin Interruptions**
+
+Understand that interruptors have legitimate reasons to interrupt you, but you can channel the time needed to deal with them into organized, scheduled form by providing an alternative to interruption - a scheduled meeting or office hour.
