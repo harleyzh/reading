@@ -14,7 +14,7 @@ Short, sweet and accurate summaries and takeaways from books.
 
 - The Ride of a Lifetime: Lessons Learned from 15 Years as CEO of the Walt Disney Company
 
-
+- Joseph L. Badaracco （Harverd Business School的professor）的Defining Moment
 
 ### Motivation
 
