@@ -16,7 +16,7 @@ Globalization means that business knows no national boundaries. Thus every emplo
 
 **Managing your own career**
 
-Accept that no matter where you work, you are not an employee - **you are in a business with one employee, yourself** . You are in competition with millions of similar businesses. But your coworkers are are not rivals, rather, people who work for orgs that compete with your firm are. **You must continually dedicate yourself to retaining your individual competitive advantage.**
+Accept that no matter where you work, you are not an employee - **you are in a business with one employee, yourself** . You are in competition with millions of similar businesses. But your coworkers are not rivals, rather, people who work for orgs that compete with your firm are. **You must continually dedicate yourself to retaining your individual competitive advantage.**
 
 Manage your career:
 
